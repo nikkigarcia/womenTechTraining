@@ -15,7 +15,7 @@ export class LessonsComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router) { }
 
-  ngOnInit() {    
+  ngOnInit() {
     this.route.params.subscribe((params) => {
       this.week = +params['week'];
 
@@ -40,7 +40,7 @@ export class LessonsComponent implements OnInit {
           break;
       }
 
-      this.setTitle(`Angular 2+ (Day ${this.day})`);
+      this.setTitle(`Women Tech Training (Day ${this.day})`);
     });
 
     // scroll to the top of the page on route change

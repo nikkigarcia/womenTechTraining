@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   constructor(private titleService: Title) { }
 
   ngOnInit() {
-    this.setTitle('Angular 2+');
+    this.setTitle('Women Tech Training');
   }
 
   setTitle(newTitle: string) {
@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
       document.getElementById('scroll-to-top').style.display = "block";
     } else {
-      document.getElementById('scroll-to-top').style.display = "none";      
+      document.getElementById('scroll-to-top').style.display = "none";
     }
   }
 

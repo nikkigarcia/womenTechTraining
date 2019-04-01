@@ -260,7 +260,7 @@ body.menu-active {
 }
 
 .sub-menu {
-	width: 400px;
+	width: 475px;
 }
 
 .padding-0 {
@@ -273,7 +273,7 @@ body.menu-active {
 
 @media(max-width: 890px) {
 	.sub-menu {
-		width: 250px;
+		width: 275px;
 	}
 
 	.sub-menu .row .border-bottom {
