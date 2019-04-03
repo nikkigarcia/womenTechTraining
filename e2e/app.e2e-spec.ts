@@ -1,10 +1,10 @@
-import { Angular2coursePage } from './app.po';
+import { WomenTechTrainingPage } from './app.po';
 
-describe('angular2course App', () => {
-  let page: Angular2coursePage;
+describe('womentechtraining App', () => {
+  let page: WomenTechTrainingPage;
 
   beforeEach(() => {
-    page = new Angular2coursePage();
+    page = new WomenTechTrainingPage();
   });
 
   it('should display message saying app works', () => {
