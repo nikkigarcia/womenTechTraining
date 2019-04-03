@@ -1,6 +1,6 @@
 import { WomenTechTrainingPage } from './app.po';
 
-describe('womentechtraining App', () => {
+describe('womenTechTraining App', () => {
   let page: WomenTechTrainingPage;
 
   beforeEach(() => {
