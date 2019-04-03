@@ -3,107 +3,61 @@
   <div class="col-md-9">
     <ul class="point">
       <li class="link"
-          (click)="scrollIntoView('typescript-continued')">Typescript Continued</li>
-      <li class="link" 
-          (click)="scrollIntoView('first-app')"> Editing the first app</li>
-      <li class="link" 
-        (click)="scrollIntoView('components')"> Components</li>
-      <li class="link" 
-          (click)="scrollIntoView('databinding')"> Databinding</li>
+          (click)="scrollIntoView('self-closing')">Self-Closing Tags</li>
+      <li class="link"
+          (click)="scrollIntoView('formats')"> Image Formats</li>
+      <li class="link"
+          (click)="scrollIntoView('display')"> Display Property</li>
     </ul>
   </div>
 </div>
 
-<!-- Typescript Continued -->
-<div class="row" id="typescript-continued">
-  <h2 class="col-md-3">Typescript Continued</h2>
+<!-- Self-Closing Tags -->
+<div class="row" id="self-closing">
+  <h2 class="col-md-3">Self-Closing Tags</h2>
   <div class="col-md-9">
-    <div class="point"> <!-- Class -->
-      <p>Class Inheritance:</p>
-      <p>A derived class that derives from the base class uses the <code>extends</code> keyword. Derived classes are often called <i>subclasses</i>, and base classes are often called <i>superclasses</i>.</p>
-    </div> <!-- End Class -->
-    <div class="point"> <!-- Interface -->
-      <h3>Interface</h3>
-      <p>An interface is a group of related properties and methods that describe an object, but neither provides implementation nor initialisation for them. Unlike classes, an interface is a virtual structure that only exists within the context of TypeScript. The TypeScript compiler uses interfaces solely for type-checking purposes.</p>
-    </div><!-- End Interface -->
-    <div class="point"> <!-- Generics -->
-      <h3>Generics</h3>
-      <p>With generics, TypeScript enables you to write code that can act on a variety of data types instead of being limited to a single one. Why do we need them at all?</p>
-    </div><!-- End Generics -->
-    <div class="point"> <!-- Module -->
-      <h3>Modules:</h3>
-      <p>The word modules refers to small units of independent, reusable code that <i>export</i>s specific objects, making them avaibale for other modules to require in their programs. Modules are highly self-contained with distict functionality, allowing them to be shuffled, removed, or added as necessary, without disrupting the system as a whole. They provide the possibility to group related logic, encapsulate it, structure your code and prevent pollution of the global namespace.</p>
-    </div> <!-- End Module -->
+    <ul class="point">
+      <li><a href="http://www.w3schools.com/tags/tag_img.asp" target="_blank">&lt;img /></a></li>
+      <li><a href="http://www.w3schools.com/tags/tag_link.asp" target="_blank">&lt;link /></a></li>
+      <li><a href="http://www.w3schools.com/tags/tag_br.asp" target="_blank">&lt;br /></a></li>
+      <li><a href="http://www.w3schools.com/tags/tag_input.asp" target="_blank">&lt;input /></a></li>
+    </ul>
   </div>
 </div>
-<!-- End Typescript Continued -->
+<!-- End Self-Closing Tags -->
 
-<!-- Editing the first app -->
-<div class="row" id="first-app">
-  <h2 class="col-md-3">Editing the first app</h2>
+<!-- Image Formats -->
+<div class="row" id="formats">
+  <h2 class="col-md-3">Image Formats</h2>
   <div class="col-md-9">
-    <!-- <p class="point">Open an IDE of your choice. I use <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code.</a></p> -->
-    <p class="point">Add <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" target="_blank">Auto Rename Tag</a> and <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer" target="_blank">Bracket Pair Colorizer</a> packages to VS Code.</p>
+    <ul class="point">
+      <li><a href="http://www.w3schools.com/html/html_images.asp" target="_blank">< img ></a> tags</li>
+        <ul style="margin-left: 50px;">
+          Formats:
+          <li><a href="https://css-tricks.com/when-to-use-jpg-and-when-to-use-gif/" target="_blank">JPG &amp; PNG</a></li>
+          <li>The amazing <a href="https://css-tricks.com/using-svg/" target="_blank">SVG</a>!!! <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg></li>
+          <li>How to pronounce <a href="https://www.youtube.com/watch?v=8LRllx9RVDs" target="_blank">gif</a></li>
+        </ul>
+      <li>How to use Google-searched Images...(but don't, though...)</li>
+      <li>Here is one site with free images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
+    </ul>
   </div>
 </div>
-<!-- End Editing the first app -->
+<!-- End Image Formats -->
 
-<!-- Components -->
-<div class="row" id="components">
-  <h2 class="col-md-3">Components</h2>
+<!-- Display Property -->
+<div class="row" id="display">
+  <h2 class="col-md-3">Display Property</h2>
   <div class="col-md-9">
-    <p class="point">Components are key features in Angular. We build our application by composing a bunch of components. We start with AppComponent (root component) which holds our entire application.</p>
-    <img src="./assets/components.png" alt="components" class="screenshot">
-    <div class="point">
-      <p>A component consists of the following -</p>
-      <ul>
-        <li>
-          <b>Template -</b> contains the HTML that needs to be rendered in the view for the application. Also includes binding and directives.
-        </li>
-        <li>
-          <b>Class -</b> contains properties and methods. This has the code which is used to support the view. It is defined in Typescript.
-        </li>
-        <li>
-          <b>Metadata -</b> has the extra data defined for the class. It is defined with a decorator.
-        </li>
-      </ul>
-    </div>
-    <div class="point">
-      <p>Lets take a look at -</p>
-      <ul>
-        <li><b>Creating new component</b></li>
-        <li>
-          <b>Understanding AppModule and Component Declaration -</b>
-          Angular uses components to build web pages & modules to bundle different pieces (components) into packages. AppModule basically gives Angular information about which features does the app have & uses.
-        </li>
-        <li><b>Using a new Component</b></li>
-        <li><b>Creating Components with CLI & nesting Components</b></li>
-        <li><b>Working with Component Template</b></li>
-        <li><b>Component Styles</b></li>
-        <li><b>Component Selector</b></li>
-      </ul>
-    </div>
+    <ul class="point">
+      <li><a href="http://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">Display</a> property</li>
+      <li>Block</li>
+      <li>Inline</li>
+      <li>Inline-Block</li>
+      <li>None</li>
+      <li><a href="https://css-tricks.com/almanac/properties/d/display/" target="_blank">More...</a></li>
+      <li>Display vs Visibility</li>
+    </ul>
   </div>
 </div>
-<!-- End Components -->
-
-<!-- Databinding -->
-<div class="row" id="databinding">
-  <h2 class="col-md-3">Databinding</h2>
-  <div class="col-md-9">
-    <p class="point">Databinding is the process that establishes a connection between the application UI and business logic.</p>
-    <img src="./assets/databinding.png" alt="databinding" class="screenshot">
-    <img src="./assets/databinding-combination.png" alt="databinding combination" class="screenshot">
-    <div class="point">
-      <ul>
-        <li>
-          <b>String interpolation -</b> Any expression that can be resolved to a string in the end is the only condition for a string interpolation syntax.
-        </li>
-        <li>
-          <b>Property binding</b>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- End Databinding -->
+<!-- End Display Property -->

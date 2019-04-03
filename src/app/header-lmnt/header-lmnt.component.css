@@ -260,7 +260,8 @@ body.menu-active {
 }
 
 .sub-menu {
-	width: 475px;
+	width: auto;
+	/* width: 475px; */
 }
 
 .padding-0 {
@@ -273,7 +274,7 @@ body.menu-active {
 
 @media(max-width: 890px) {
 	.sub-menu {
-		width: 275px;
+		/* width: 275px; */
 	}
 
 	.sub-menu .row .border-bottom {
@@ -283,8 +284,8 @@ body.menu-active {
 
 @media(max-width: 560px) {
 	.sub-menu {
-		width: 200px;
-		height: 500px !important;
+		/* width: 200px;
+		height: 500px !important; */
 	}
 
 	.sub-menu .row .bottom-border {

@@ -2,25 +2,52 @@
   <h2 class="col-md-3">Concepts</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li class="link" 
+      <li class="link"
+          (click)="scrollIntoView('setup')"> Setup</li>
+      <li class="link"
           (click)="scrollIntoView('intro')"> Introductions</li>
-      <li class="link" 
-          (click)="scrollIntoView('angular')"> What is Angular?</li>
-      <li class="link" 
-          (click)="scrollIntoView('spa')"> What are SPAs?</li>
-      <li class="link" 
-          (click)="scrollIntoView('framework')"> Angular Framework</li>
-      <li class="link" 
-          (click)="scrollIntoView('cli')"> Angular CLI</li>
-      <li class="link" 
-          (click)="scrollIntoView('basics')"> The Basics</li>
-      <li class="link" 
-          (click)="scrollIntoView('git-branching')"> Git Branching & Pull Requests</li>
-      <li class="link" 
-          (click)="scrollIntoView('typescript')"> What is Typescript?</li>
+      <li class="link"
+          (click)="scrollIntoView('icebreaker')"> Icebreaker</li>
+      <li class="link"
+          (click)="scrollIntoView('html-css')"> What are HTML &amp; CSS</li>
+      <li class="link"
+          (click)="scrollIntoView('syntax')"> HTML &amp; CSS Syntax</li>
+      <li class="link"
+          (click)="scrollIntoView('git-branching')"> Github, Git, Branching & Pull Requests</li>
+      <li class="link"
+          (click)="scrollIntoView('measurement')"> Pixels as Measurement</li>
+      <li class="link"
+          (click)="scrollIntoView('format')"> Color Formats</li>
+      <li class="link"
+          (click)="scrollIntoView('selectors')"> CSS Selectors</li>
     </ul>
   </div>
 </div>
+
+<!-- Setup -->
+<div class="row" id="setup">
+  <h2 class="col-md-3">Setup</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li><a href="https://slack.com/" target="_blank">Slack</a></li>
+      <li><a href="https://git-scm.com/download" target="_blank">Git</a></li>
+      <img src="assets/git-option.png" style="width:400px; height:300px" alt="Git Option">
+      <li>**Make sure you check this option</li>
+      <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+      <li>Packages to add to Atom:</li>
+      <ul style="margin-left: 50px; list-style-type: circle;">
+        <li>Emmet</li>
+        <li>Open in Browser</li>
+        <!-- <li>Auto Rename Tag</li> -->
+        <li>Bracket pair colorizer</li>
+      </ul>
+      <li><a href="github.com" target="_blank">Github</a></li>
+      <li><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank">SSH keys</a></li>
+      <li>**Windows if you're having trouble with the last step, try:<br><code>cat ~/.ssh/id_rsa.pub | clip</code></li>
+    </ul>
+  </div>
+</div>
+<!-- End Setup -->
 
 <!-- Introductions -->
 <div class="row" id="intro">
@@ -34,115 +61,90 @@
 </div>
 <!-- End Introductions -->
 
-<!-- What is Angular -->
-<div class="row" id="angular">
-  <h2 class="col-md-3">What is Angular?</h2>
+<!-- Icebreaker -->
+<div class="row" id="icebreaker">
+  <h2 class="col-md-3">Icebreaker</h2>
   <div class="col-md-9">
-    <p class="point">Angular is a Typescript-based open-source front-end web application framework that allows you to create reactive SPAs.</p>
-  </div>
-</div>
-<!-- End What is Angular -->
-
-<!-- What are SPAs -->
-<div class="row" id="spa">
-  <h2 class="col-md-3">What are SPAs?</h2>
-  <div class="col-md-9">
-    <p class="point">Single Page Applications (SPAs) are web applications where the page never changes but is rewritten. There is only one HTML file and a bunch of JS code we get from the server. Every change is rendered in the browser. This approach avoids interruption of user experience between successive pages making application behave more like a desktop application.</p>
-  </div>
-</div>
-<!-- End What are SPAs -->
-
-<!-- Angular Framework -->
-<div class="row" id="framework">
-  <h2 class="col-md-3">Angular Framework</h2>
-  <div class="col-md-9">
-    <p class="point">There are various versions of Angular framework available.</p>
-    <img src="./assets/angular-framework.png" alt="angular framework versions" class="screenshot">
-    <p class="point">Angular 1 was the first Angular framework (released in 2009). It was the first to make single-page-applications and better way of making DOM (Document Object Model) manipulations popular back in the day.</p>
-    <p class="point">Angular 2 (2015-2016) was a complete rewrite of Angular 1 to fix many issues mainly performance issues.</p>
-    <img src="./assets/angular-framework-evolution.png" alt="angular 2 evolution" class="screenshot">
-    <p class="point">Angular 4, 5 and 6 are the latest versions of Angular 2. So in general, we refer to Angular 2 and higher as just "Angular". Angular 1, however, is not related to these version. Therefore Angular 1 is called "AngularJS".</p>
-    <img src="./assets/angular-vs-angularjs.png" alt="angular vs angularJs" class="screenshot">
-    <p class="point">Currently 6 is the latest version<!-- (which we will be learning) -->. It is not a complete rewrite for every version. These are incremental improvements of Angular 2.</p>
-    <img src="./assets/angular2.png" alt="angular latest" class="screenshot">
-  </div>
-</div>
-<!-- End Angular Framework -->
-
-<!-- Angular CLI -->
-<div class="row" id="cli">
-  <h2 class="col-md-3">Angular CLI</h2>
-  <div class="col-md-9">
-    <p class="point">Angular projects are more elaborate in regards to their build workflow, there are couple of files that need to be converted before they can run in browser. Angular CLI (Command Line Interface) is the recommended and best way of creating Angular projects as it does all of that work for us and heavily optimizes our code.</p>
-    <br>
-    <p class="point">In order to make use of Angular CLI, we need to make sure we have NodeJS, npm and CLI installed globally on our machine.</p>
-    <br>
     <ul class="point">
-      <li>
-        <b>Installing or Updating NodeJS -</b>
-        <br> 
-        Go <a href="https://nodejs.org/en/" target="_blank">here</a> and download the latest version
-      </li>
-      <br>
-      <li>
-        <b>Installing or Updating npm -</b> 
-        <br>
-        Run <code>[sudo] npm install -g npm</code> (sudo maybe required for Mac/Linux)
-      </li>
-      <br>
-      <li>
-        <b>Installing the CLI -</b> 
-        <br>
-        If you have an older version of Angular CLI already installed on your device and want to upgrade, run:
-        <br>
-        <code>
-          npm uninstall -g angular-cli
-        </code>
-        <br>
-        <code>
-          npm cache clean
-        </code>
-        <br>
-        <code>npm install -g @angular/cli/@latest</code>
-        <br>
-        Otherwise just run <code>npm install -g @angular/cli/@latest</code>
-      </li>
-      <br>
-      <li>
-        <b>Creating a new project -</b>
-        <br>
-        <p>Open your terminal/command line and navigate into a folder where you want to create the new project using the <code>cd</code> command.</p>
-        <p>Run <code>ng new my-first-app</code> (project name cannot be test as it is a reserved word).</p>
-        <p>Navigate into the project. <code>cd my-first-app</code></p>
-        <p>Run <code>ng serve</code> (to bring up a development server to run your build so you can see it in the browser)</p>
-        <p>Go to <a href="http://localhost:4200/" target="_blank">http://localhost:4200/</a> to see the default angular application the CLI created.</p>
-      </li>
-      <img src="./assets/common-cli-issues.png" alt="common issues" class="screenshot">
+      <li>Give yourself a point</li>
+      <li>Free association</li>
     </ul>
   </div>
 </div>
-<!-- End Angular CLI -->
+<!-- End Icebreaker -->
 
-<!-- The Basics -->
-<div class="row" id="basics">
-  <h2 class="col-md-3">The Basics</h2>
+<!-- What are HTML &amp; CSS -->
+<div class="row" id="html-css">
+  <h2 class="col-md-3">What are HTML &amp; CSS</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li><a href="http://www.w3schools.com/html/" target="_blank">HTML5</a></li>
+      <li><a href="http://www.w3schools.com/css/" target="_blank">CSS</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End What are HTML &amp; CSS -->
+
+<!-- HTML &amp; CSS Syntax -->
+<div class="row" id="syntax">
+  <h2 class="col-md-3">HTML &amp; CSS Syntax</h2>
   <div class="col-md-9">
     <div class="point">
-      <h3>Bootstrap:</h3>
-      <p>Stop your server (if it is running). <br> Then run <code>npm install --save bootstrap@3</code>. This is the first step of adding bootstrap to our project. <br> Next step is to edit <i>angular-cli.json</i> file to add "node_modules/boostrap/dist/bootstrap.min.css" to the styles array. <br> Re-run <code>ng serve</code>.</p>
+      <pre class="language-markup">
+        <code class="language-markup">
+        <!DOCTYPE html>
+        < html >
+            < head >
+                < meta name = "viewport" content = "scale: 1:1" />
+                < title >Page Title< /title >
+            < / head >
+            < body >
+                < header >
+                    < h1 >TITLE < /h1 >
+                < /header >
+                < div >
+                  < p > Text here < / p >
+                < / div >
+            < /body >
+        < / html >
+        < !- - comment - - >
+        </code>
+      </pre>
     </div>
     <div class="point">
-      <h3>How does an angular app get loaded and started?</h3>
+      <pre class="language-markup">
+        <code class="language-markup">
+        element name {{ '{' }}
+          property: modifier;
+        {{ '}' }}
+
+        /* comment */
+
+        p {{ '{' }}
+          property: modifer;
+        {{ '}' }}
+        </code>
+      </pre>
     </div>
   </div>
 </div>
-<!-- End The Basics -->
+<!-- End HTML &amp; CSS Syntax -->
 
-<!-- Git Branching & Pull Requests -->
+<!-- Github, Git, Branching & Pull Requests -->
 <div class="row" id="git-branching">
-  <h2 class="col-md-3">Git Branching & Pull Requests</h2>
+  <h2 class="col-md-3">Github, Git, Branching & Pull Requests</h2>
   <div class="col-md-9">
-    <p class="point">A branch in Git is simply a lightweight movable pointer to commits. The default branch name in Git is <i>master</i>.</p>
+    <p class="point">Github vs Git</p>
+    <p class="point">Basic Git commands:</p>
+    <ul class="point">
+      <li><code>git status</code> - lists all files touched</li>
+      <li><code>git add .</code> - tracks all files touched</li>
+      <li><code>git commit -m</code> - commits all tracked files with a message</li>
+      <li><code>git push <i>origin branch-name</i></code> - pushes code to Github on the branch mentioned</li>
+      <li><code>git pull <i>origin branch-name</i></code> - pull code from Github on the branch mentioned</li>
+    </ul>
+    <p class="point">Read more <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">here</a>.</p>
+    <p class="point">A <b>branch</b> in Git is simply a lightweight movable pointer to commits. The default branch name in Git is <i>master</i>.</p>
     <p class="point">Basic Git commands related to branching:</p>
     <ul class="point">
       <li><code>git branch</code> - lists all available branches</li>
@@ -155,58 +157,41 @@
     <p class="point">Read more <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank">here</a> and <a href="https://www.atlassian.com/git/tutorials/using-branches" target="_blank">here</a>.</p>
   </div>
 </div>
-<!-- End Git Branching & Pull Requests -->
+<!-- End Github, Git, Branching & Pull Requests -->
 
-<!-- Typescript -->
-<div class="row" id="typescript">
-  <h2 class="col-md-3">Typescript</h2>
+<!-- Pixels as measurement -->
+<div class="row" id="measurement">
+  <h2 class="col-md-3">Pixels as measurement</h2>
   <div class="col-md-9">
-    <p class="point">We have come across the word Typescript before in the definition of Angular. But what does it mean?</p>
-    <p class="point">Typescript is a superset of Javascript. It primarily provides optional static typing, classes and interfaces. It compiles to idiomatic (normal) JavaScript, can dramatically improve your productivity by enabling rich tooling experiences, all while maintaining your existing code and continuing to use the same JavaScript libraries you already love. One of the big benefits is to enable IDEs to provide a richer environment for spotting common errors as you type the code.</p>
-    <img src="./assets/typescript.png" alt="typescript" class="screenshot">
-    <p class="point">TypeScript makes it easier to write cross-platform, application scale, JavaScript that runs in any browser or in any host.</p>
-    <p class="point">Let's go to <a href="https://www.typescriptlang.org/play/" target="_blank">Typescript playground</a> to see what it does.</p>
-    <br>
-    <div class="point"> <!-- Types -->
-      <h3>Types:</h3>
-      <p>The Type system represents the different types of values supported by the language. It checks for the validity of the supplied values, before they are stored or manipulated by the program. It further allows for richer code hinting and automated documentation too.</p>
-      <p>Built-in types -</p>
-      <ul>
-        <li>
-          <b>Number -</b> Can be used to represent both integers and floats.
-        </li>
-        <li>
-          <b>String -</b> Represents a sequence of Unicode characters.
-        </li>
-        <li>
-          <b>Boolean -</b> Represents logical values (ture or false).
-        </li>
-        <li>
-          <b>Null -</b> Represents an intentional absence of an object value.
-        </li>
-        <li>
-          <b>Undefined -</b> Denotes value given to all uninitialized variables.
-        </li>
-      </ul>
-      <p>Null and undefined - Are they the same?</p>
-    </div> <!-- End Types -->
-    <div class="point"> <!-- Class -->
-      <h3>Class:</h3>
-      <p>A class defines a blueprint of what an object should look like and act like and then implements that blueprint by initialising class properties and defining methods.</p>
-      <p>A class definition can include the following -</p>
-      <ul>
-        <li>
-          <b>Fields -</b> A field is any variable declared in a class. Fields represent data pertaining to objects.
-        </li>
-        <li>
-          <b>Constructors -</b> Responsible for allocating memory for the objects of the class.
-        </li>
-        <li>
-          <b>Functions -</b> Functions represent actions an object can take. They are also at times reffered to as methods.
-        </li>
-      </ul>
-      <p>These components put together are termed as the data members of the class.</p>
-    </div> <!-- End Class -->
+    <ul class="point">
+      <li><a href="http://www.w3schools.com/cssref/css_units.asp" target="_blank">Pixels</a> as <a href="https://css-tricks.com/the-lengths-of-css/" target="_blank">Measurement</a></li>
+    </ul>
   </div>
 </div>
-<!-- End Typescript -->
+<!-- End Pixels as measurement -->
+
+<!-- Color Formats -->
+<div class="row" id="format">
+  <h2 class="col-md-3">Color Formats</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li><a href="http://www.w3schools.com/colors/colors_hexadecimal.asp" target="_blank">Hex </a>colors</li>
+      <li><a href="http://www.w3schools.com/colors/colors_rgb.asp" target="_blank">RGB</a> and <a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_opacity_box2" target="_blank">RGBA</a></li>
+      <li>Resources: <a href="http://colllor.com/" target="_blank">colllor.com</a>, w3 Schools <a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">Color Picker</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End Color Formats -->
+
+<!-- CSS Selectors -->
+<div class="row" id="format">
+  <h2 class="col-md-3">CSS Selectors</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li><a href="https://www.w3schools.com/cssref/sel_element.asp" target="_blank">Element</a> selector</li>
+      <li><a href="https://www.w3schools.com/cssref/sel_class.asp" target="_blank">Class:</a> Reusable, brief, infinite possible</li>
+      <li><a href="https://www.w3schools.com/cssref/sel_id.asp" target="_blank">ID:</a> Used sparingly, ONLY ONCE, in a pinch</li>
+    </ul>
+  </div>
+</div>
+<!-- End CSS Selectors -->
