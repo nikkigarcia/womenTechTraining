@@ -6,11 +6,11 @@ const appRoutes: Routes = [
         path: '',
         pathMatch: 'full',
         redirectTo: '/lessons/1/1'
-    }, 
+    },
     {
         path: '**',
         redirectTo: '/lessons/1/1'
     }
 ];
 
-export const AppRouting = RouterModule.forRoot(appRoutes, {useHash: true});
+export const AppRouting = RouterModule.forRoot(appRoutes, { useHash: true });
