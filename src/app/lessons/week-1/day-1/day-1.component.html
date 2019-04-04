@@ -8,16 +8,6 @@
           (click)="scrollIntoView('intro')"> Introductions</li>
       <li class="link"
           (click)="scrollIntoView('icebreaker')"> Icebreaker</li>
-      <li class="link"
-          (click)="scrollIntoView('html-css')"> What are HTML &amp; CSS</li>
-      <li class="link"
-          (click)="scrollIntoView('syntax')"> HTML &amp; CSS Syntax</li>
-      <li class="link"
-          (click)="scrollIntoView('git-branching')"> Github, Git, Branching & Pull Requests</li>
-      <li class="link"
-          (click)="scrollIntoView('self-closing')"> Self-Closing Tags</li>
-      <li class="link"
-          (click)="scrollIntoView('formats')"> Image Formats</li>
     </ul>
   </div>
 </div>
@@ -34,7 +24,6 @@
       <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
       <li>Packages to add to VSC:</li>
       <ul style="margin-left: 50px; list-style-type: circle;">
-        <li>Emmet</li>
         <li>Open in Browser</li>
         <!-- <li>Auto Rename Tag</li> -->
         <li>Bracket pair colorizer</li>
@@ -70,122 +59,3 @@
   </div>
 </div>
 <!-- End Icebreaker -->
-
-<!-- What are HTML &amp; CSS -->
-<div class="row" id="html-css">
-  <h2 class="col-md-3">What are HTML &amp; CSS</h2>
-  <div class="col-md-9">
-    <ul class="point">
-      <li><a href="http://www.w3schools.com/html/" target="_blank">HTML5</a></li>
-      <li><a href="http://www.w3schools.com/css/" target="_blank">CSS</a></li>
-    </ul>
-  </div>
-</div>
-<!-- End What are HTML &amp; CSS -->
-
-<!-- HTML &amp; CSS Syntax -->
-<div class="row" id="syntax">
-  <h2 class="col-md-3">HTML &amp; CSS Syntax</h2>
-  <div class="col-md-9">
-    <div class="point">
-      <pre class="language-markup">
-        <code class="language-markup">
-        <!DOCTYPE html>
-        < html >
-            < head >
-                < meta name = "viewport" content = "scale: 1:1" />
-                < title >Page Title< /title >
-            < / head >
-            < body >
-                < header >
-                    < h1 >TITLE < /h1 >
-                < /header >
-                < div >
-                  < p > Text here < / p >
-                < / div >
-            < /body >
-        < / html >
-        < !- - comment - - >
-        </code>
-      </pre>
-    </div>
-    <div class="point">
-      <pre class="language-markup">
-        <code class="language-markup">
-        element name {{ '{' }}
-          property: modifier;
-        {{ '}' }}
-
-        /* comment */
-
-        p {{ '{' }}
-          property: modifer;
-        {{ '}' }}
-        </code>
-      </pre>
-    </div>
-  </div>
-</div>
-<!-- End HTML &amp; CSS Syntax -->
-
-<!-- Github, Git, Branching & Pull Requests -->
-<div class="row" id="git-branching">
-  <h2 class="col-md-3">Github, Git, Branching & Pull Requests</h2>
-  <div class="col-md-9">
-    <p class="point">Github vs Git</p>
-    <p class="point">Basic Git commands:</p>
-    <ul class="point">
-      <li><code>git status</code> - lists all files touched</li>
-      <li><code>git add .</code> - tracks all files touched</li>
-      <li><code>git commit -m</code> - commits all tracked files with a message</li>
-      <li><code>git push <i>origin branch-name</i></code> - pushes code to Github on the branch mentioned</li>
-      <li><code>git pull <i>origin branch-name</i></code> - pull code from Github on the branch mentioned</li>
-    </ul>
-    <p class="point">Read more <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">here</a>.</p>
-    <p class="point">A <b>branch</b> in Git is simply a lightweight movable pointer to commits. The default branch name in Git is <i>master</i>.</p>
-    <p class="point">Basic Git commands related to branching:</p>
-    <ul class="point">
-      <li><code>git branch</code> - lists all available branches</li>
-      <li><code>git branch <i>branch-name</i></code> - creates a new branch called <i>branch-name</i> which has a copy of the snapshot of its parent branch (branch you ran this command from)</li>
-      <li><code>git checkout <i>branch-name</i></code> - switches to <i>branch-name</i> branch</li>
-      <li><code>git checkout -b <i>branch-name</i></code> - combines the functionality of last two commands</li>
-      <li><code>git branch -d <i>branch-name</i></code> - deleted <i>branch-name</i> branch</li>
-    </ul>
-    <p class="point">NOTE: all of the above commands are only for local branches.</p>
-    <p class="point">Read more <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank">here</a> and <a href="https://www.atlassian.com/git/tutorials/using-branches" target="_blank">here</a>.</p>
-  </div>
-</div>
-<!-- End Github, Git, Branching & Pull Requests -->
-
-<!-- Self-Closing Tags -->
-<div class="row" id="self-closing">
-  <h2 class="col-md-3">Self-Closing Tags</h2>
-  <div class="col-md-9">
-    <ul class="point">
-      <li><a href="http://www.w3schools.com/tags/tag_img.asp" target="_blank">&lt;img /></a></li>
-      <li><a href="http://www.w3schools.com/tags/tag_link.asp" target="_blank">&lt;link /></a></li>
-      <li><a href="http://www.w3schools.com/tags/tag_br.asp" target="_blank">&lt;br /></a></li>
-      <li><a href="http://www.w3schools.com/tags/tag_input.asp" target="_blank">&lt;input /></a></li>
-    </ul>
-  </div>
-</div>
-<!-- End Self-Closing Tags -->
-
-<!-- Image Formats -->
-<div class="row" id="formats">
-  <h2 class="col-md-3">Image Formats</h2>
-  <div class="col-md-9">
-    <ul class="point">
-      <li><a href="http://www.w3schools.com/html/html_images.asp" target="_blank">< img ></a> tags</li>
-        <ul style="margin-left: 50px;">
-          Formats:
-          <li><a href="https://css-tricks.com/when-to-use-jpg-and-when-to-use-gif/" target="_blank">JPG &amp; PNG</a></li>
-          <li>The amazing <a href="https://css-tricks.com/using-svg/" target="_blank">SVG</a>!!! <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg></li>
-          <li>How to pronounce <a href="https://www.youtube.com/watch?v=8LRllx9RVDs" target="_blank">gif</a></li>
-        </ul>
-      <li>How to use Google-searched Images...(but don't, though...)</li>
-      <li>Here is one site with free images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
-    </ul>
-  </div>
-</div>
-<!-- End Image Formats -->
