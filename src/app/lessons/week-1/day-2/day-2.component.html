@@ -3,7 +3,7 @@
   <div class="col-md-9">
     <ul class="point">
       <li class="link"
-          (click)="scrollIntoView('html-css')"> What are HTML &amp; CSS</li>
+          (click)="scrollIntoView('html-css')"> What are HTML, CSS &amp; Javascript</li>
       <li class="link"
           (click)="scrollIntoView('syntax')"> HTML &amp; CSS Syntax</li>
       <li class="link"
@@ -24,17 +24,18 @@
   </div>
 </div>
 
-<!-- What are HTML &amp; CSS -->
+<!-- What are HTML, CSS &amp; Javascript -->
 <div class="row" id="html-css">
-  <h2 class="col-md-3">What are HTML &amp; CSS</h2>
+  <h2 class="col-md-3">What are HTML, CSS &amp; Javascript</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li><a href="http://www.w3schools.com/html/" target="_blank">HTML5</a></li>
-      <li><a href="http://www.w3schools.com/css/" target="_blank">CSS</a></li>
+      <li><a href="https://www.w3schools.com/html/" target="_blank">HTML5</a></li>
+      <li><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
+      <li><a href="https://www.w3schools.com/js/" target="_blank">Javascript</a></li>
     </ul>
   </div>
 </div>
-<!-- End What are HTML &amp; CSS -->
+<!-- End What are HTML, CSS &amp; Javascript -->
 
 <!-- HTML &amp; CSS Syntax -->
 <div class="row" id="syntax">
@@ -65,15 +66,31 @@
     <div class="point">
       <pre class="language-markup">
         <code class="language-markup">
-        element name {{ '{' }}
-          property: modifier;
-        {{ '}' }}
+          element-name {{ '{' }}
+            property: modifier;
+          {{ '}' }}
 
-        /* comment */
+          /* comment */
 
-        p {{ '{' }}
-          property: modifer;
-        {{ '}' }}
+          .class-name {{ '{' }}
+            property: modifer;
+          {{ '}' }}
+
+          #id-name {{ '{' }}
+            property: modifer;
+          {{ '}' }}
+        </code>
+      </pre>
+    </div>
+    <div class="point">
+      <pre class="language-markup">
+        <code class="language-markup">
+          var x = 0;
+          var str = 'Hi!';
+
+          function foo() {{ '{' }}
+            var bool = true;
+          {{ '}' }}
         </code>
       </pre>
     </div>
