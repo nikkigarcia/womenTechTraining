@@ -7,11 +7,11 @@
       <li class="link"
           (click)="scrollIntoView('syntax')"> HTML &amp; CSS Syntax</li>
       <li class="link"
-          (click)="scrollIntoView('git-branching')"> Github, Git, Branching & Pull Requests</li>
-      <li class="link"
           (click)="scrollIntoView('self-closing')"> Self-Closing Tags</li>
       <li class="link"
           (click)="scrollIntoView('formats')"> Image Formats</li>
+      <li class="link"
+          (click)="scrollIntoView('git-branching')"> Github, Git, Branching & Pull Requests</li>
       <li class="link"
           (click)="scrollIntoView('measurement')"> Pixels as Measurement</li>
       <li class="link"
@@ -81,35 +81,6 @@
 </div>
 <!-- End HTML &amp; CSS Syntax -->
 
-<!-- Github, Git, Branching & Pull Requests -->
-<div class="row" id="git-branching">
-  <h2 class="col-md-3">Github, Git, Branching & Pull Requests</h2>
-  <div class="col-md-9">
-    <p class="point">Github vs Git</p>
-    <p class="point">Basic Git commands:</p>
-    <ul class="point">
-      <li><code>git status</code> - lists all files touched</li>
-      <li><code>git add .</code> - tracks all files touched</li>
-      <li><code>git commit -m</code> - commits all tracked files with a message</li>
-      <li><code>git push <i>origin branch-name</i></code> - pushes code to Github on the branch mentioned</li>
-      <li><code>git pull <i>origin branch-name</i></code> - pull code from Github on the branch mentioned</li>
-    </ul>
-    <p class="point">Read more <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">here</a>.</p>
-    <p class="point">A <b>branch</b> in Git is simply a lightweight movable pointer to commits. The default branch name in Git is <i>master</i>.</p>
-    <p class="point">Basic Git commands related to branching:</p>
-    <ul class="point">
-      <li><code>git branch</code> - lists all available branches</li>
-      <li><code>git branch <i>branch-name</i></code> - creates a new branch called <i>branch-name</i> which has a copy of the snapshot of its parent branch (branch you ran this command from)</li>
-      <li><code>git checkout <i>branch-name</i></code> - switches to <i>branch-name</i> branch</li>
-      <li><code>git checkout -b <i>branch-name</i></code> - combines the functionality of last two commands</li>
-      <li><code>git branch -d <i>branch-name</i></code> - deleted <i>branch-name</i> branch</li>
-    </ul>
-    <p class="point">NOTE: all of the above commands are only for local branches.</p>
-    <p class="point">Read more <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank">here</a> and <a href="https://www.atlassian.com/git/tutorials/using-branches" target="_blank">here</a>.</p>
-  </div>
-</div>
-<!-- End Github, Git, Branching & Pull Requests -->
-
 <!-- Self-Closing Tags -->
 <div class="row" id="self-closing">
   <h2 class="col-md-3">Self-Closing Tags</h2>
@@ -142,6 +113,35 @@
   </div>
 </div>
 <!-- End Image Formats -->
+
+<!-- Github, Git, Branching & Pull Requests -->
+<div class="row" id="git-branching">
+  <h2 class="col-md-3">Github, Git, Branching & Pull Requests</h2>
+  <div class="col-md-9">
+    <p class="point">Github vs Git</p>
+    <p class="point">Basic Git commands:</p>
+    <ul class="point">
+      <li><code>git status</code> - lists all files touched</li>
+      <li><code>git add .</code> - tracks all files touched</li>
+      <li><code>git commit -m</code> - commits all tracked files with a message</li>
+      <li><code>git push <i>origin branch-name</i></code> - pushes code to Github on the branch mentioned</li>
+      <li><code>git pull <i>origin branch-name</i></code> - pull code from Github on the branch mentioned</li>
+    </ul>
+    <p class="point">Read more <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">here</a>.</p>
+    <p class="point">A <b>branch</b> in Git is simply a lightweight movable pointer to commits. The default branch name in Git is <i>master</i>.</p>
+    <p class="point">Basic Git commands related to branching:</p>
+    <ul class="point">
+      <li><code>git branch</code> - lists all available branches</li>
+      <li><code>git branch <i>branch-name</i></code> - creates a new branch called <i>branch-name</i> which has a copy of the snapshot of its parent branch (branch you ran this command from)</li>
+      <li><code>git checkout <i>branch-name</i></code> - switches to <i>branch-name</i> branch</li>
+      <li><code>git checkout -b <i>branch-name</i></code> - combines the functionality of last two commands</li>
+      <li><code>git branch -d <i>branch-name</i></code> - deleted <i>branch-name</i> branch</li>
+    </ul>
+    <p class="point">NOTE: all of the above commands are only for local branches.</p>
+    <p class="point">Read more <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank">here</a> and <a href="https://www.atlassian.com/git/tutorials/using-branches" target="_blank">here</a>.</p>
+  </div>
+</div>
+<!-- End Github, Git, Branching & Pull Requests -->
 
 <!-- Pixels as measurement -->
 <div class="row" id="measurement">
