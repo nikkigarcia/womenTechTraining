@@ -2,190 +2,39 @@
   <h2 class="col-md-3">Concepts</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li class="link"> Assingments Solutions</li>
-      <li class="link" 
-          (click)="scrollIntoView('recap-typescript')"> Typescript Recap</li>
-      <li class="link" 
-          (click)="scrollIntoView('recap-components')"> Components Recap</li>
-      <li class="link" 
-          (click)="scrollIntoView('recap-built-in-directives')"> Built-in Directives Recap</li>
+      <li class="link"
+        (click)="scrollIntoView('bootstrap')"> Bootstrap</li>
+      <li class="link"
+        (click)="scrollIntoView('helpers')"> Bootstrap Helper Classes</li>
     </ul>
   </div>
 </div>
 
-<!-- Typescript Recap -->
-<div class="row" id="recap-typescript">
-  <h2 class="col-md-3">Typescript Recap</h2>
-  <div class="col-md-9">
-    <div class="point">
-      <p><b>Types:</b></p>
-      <ul>
-        <li>What are the different types in typescript?</li>
-        <li>
-          Null vs Undefined-
-          <ul>
-            <li>Something hasn't been initialized: <code>undefined</code>.</li>
-            <li>Something is currently unavailable: <code>null</code>.</li>
-          </ul>
-        </li>
-        <li>Array type?</li>
-        <li><b>Practice: </b>Create a variable for each type and set some default values to them.</li>
-      </ul>
-    </div>
-    <div class="point">
-        <p><b>Class:</b></p>
-        <ul>
-          <li>What is a class?</li>
-          <li>What can a class definition include?</li>
-          <li>What is class inheritance?</li>
-          <li>Subclass and Superclass?</li>
-          <li>Private, Public and Protected.</li>
-          <li>
-            <b>Practice:</b>
-            <ul>
-              <li>Create a class <i>CarBrand</i> that has make field.</li>
-              <li>Create a variable <i>ford</i> that is an instance of <i>CarBrand</i>.</li>
-              <li>Print the value of <i>ford</i>'s <i>make</i> property.</li>
-              <li>Create a derived class <i>Car</i> that has model and year fields.</li>
-              <li>Add a <i>getDetails</i> method to <i>Car</i> which return a simple string including the make, model and year of the car.</li>
-              <li>Create a variable <i>honda</i> that is an instance of <i>Car</i> and set "honda" as the <i>make</i> with other values of your choice.</li>
-              <li>Print the value of <i>honda</i>'s <i>make</i> property.</li>
-              <li>Now set <i>make</i> field of <i>CarBrand</i> to be private.</li>
-              <li>Do the console logs still work?</li>
-              <li>What about when <i>make</i> is set to protected?</li>
-            </ul>
-          </li>
-        </ul>
-    </div>
-    <div class="point">
-      <p><b>Interface:</b></p>
-      <ul>
-        <li>What is an interface?</li>
-        <li>How is it different from a class?</li>
-        <li>
-          <b>Practice:</b>
-          <ul>
-            <li>Create an interface <i>Fighter</i> which has name and points fields of types string and number respectively.</li>
-            <li>Create two variables <i>fighter1</i> and <i>fighter2</i> that are of type <i>Fighter</i> and set some default values to them.</li>
-            <li>Print both these variables.</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="point">
-      <p><b>Module:</b></p>
-      <ul>
-        <li>What are modules?</li>
-        <li>
-          <b>Practice:</b>
-          <ul>
-            <li>Create a module <i>Vehicle</i> which has a class <i>Sedan</i>.</li>
-            <li><i>Sedan</i> class has make, model and year fields.</li>
-            <li><i>Vehicle</i> also has a variable <i>honda</i> which is an instance of <i>Sedan</i> class.</li>
-            <li>Create a variable <i>ford</i> and set it to be a new instance of Sedan class.</li>
-            <li>Did it work?</li>
-            <li>Export the <i>Sedan</i> class and try again.</li>
-            <li>Print the value of <i>ford</i> and <i>honda</i>.</li>
-            <li>What happened now and why?</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- End Typescript Recap -->
-
-<!-- Components Recap -->
-<div class="row" id="recap-components">
-  <h2 class="col-md-3">Components Recap</h2>
+<!-- Bootstrap -->
+<div class="row" id="bootstrap">
+  <h2 class="col-md-3">Bootstrap</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li>What does a component consist of?</li>
-      <li>How does angular know that a component class is special?</li>
-      <li>Command to create a new component?</li>
-      <li>Ways to select a component?</li>
-      <li>Ways to link a template?</li>
-      <li>Ways to link styles for the template?</li>  
-      <li>
-        <b>Practice:</b>
-        <ul>
-          <li>Create a new component <i>GreetingMessage</i> manually.</li>
-          <li>Use default selector, external template and external styles.</li>
-          <li>Display some text in the template and style it.</li>
-          <li>Display this component in AppComponent.</li>
-          <li>Now use attribute selector and make appropriate changes.</li>
-          <li>Now use class selector and make appropriate changes.</li>
-          <li>Use inline template and inline styles.</li>
-        </ul>
-      </li>    
+      <li>Click <a href="http://getbootstrap.com/getting-started/#download" target="_blank">here</a> to download Bootstrap.</li>
+      <li>Copy Files</li>
+      <li>In order to use a framework, you have to reference it. The two ways we will talk about are using a <a href="https://www.bootstrapcdn.com/" target="_blank">CDN</a> and native linking.</li>
+      <li>Read more <a href="https://en.wikipedia.org/wiki/Content_delivery_network" target="_blank">here</a>.</li>
     </ul>
+    <p class="point">Understanding Bootstrap <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php" target="_blank">Grid System</a> and <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">more</a>.</p>
   </div>
 </div>
-<!-- End Components Recap -->
+<!-- End Bootstrap -->
 
-<!-- Built-in Directives Recap -->
-<div class="row" id="recap-built-in-directives">
-  <h2 class="col-md-3">Built-in Directives Recap</h2>
+<!-- Bootstrap Helper Classes -->
+<div class="row" id="helpers">
+  <h2 class="col-md-3">Bootstrap Helper Classes</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li>What is a directive?</li>
-      <li>Two types of directives?</li>
-      <li>Some of basic built-in directives?</li>
-      <li>
-        <b>Practice:</b>
-        <ul>
-          <!-- ngIf -->
-          <li><b>ngIf-</b></li>
-          <li>Create a property <i>displayParagraph</i> of type boolean and set it to <code>false</code> by default.</li>
-          <li>Display a paragraph with any text of your choice.</li>
-          <li>Add a condition (ngIf) on the above paragraph to check the value of <i>displayParagraph</i>.</li>
-          <li>The paragraph should be displayed if <i>displayParagraph</i> is true.</li>
-          <li>Now set the value of <i>displayParagraph</i> to <code>true</code> and observe the change in template.</li>
-          <!-- end ngIf -->   
-
-          <br>
-          
-          <!-- ngStyle -->          
-          <li><b>ngStyle-</b></li>
-          <li>
-            Use ngStyle to set
-            <br>
-            <ul>
-              <li>
-                <code>position: absolute;<br>right: 0;<br>top: 0;</code>
-              </li>
-            </ul> 
-            properties of the above paragraph.
-          </li>
-          <!-- end ngStyle -->          
-          
-          <br>
-          
-          <!-- ngClass -->          
-          <li><b>ngClass-</b></li>
-          <li>Create a css class <i>color-red</i> that sets the color to red.</li>
-          <li>Create another css class <i>background-yellow</i> that sets the background-color to yellow.</li>
-          <li>Create another css class <i>hide-text</i> that sets the display property to none.</li>
-          <li>Add a new paragraph with any text below the existing paragraph.</li>
-          <li>Add <i>color-red</i> and <i>background-yellow</i> classes using string assignments to ngClass.</li>
-          <li>Create another paragraph with any text and add <i>color-red</i> and <i>background-yellow</i> classes using array assignemnt to ngClass.</li>
-          <li>
-            Create another paragraph with some text and add <i>color-red</i> and <i>background-yellow</i> classes using object assignment to ngClass. To this paragraph, add <i>hide-text</i> class if <i>displayParagraph</i> is true.
-          </li>
-          <!-- end ngClass -->
-
-          <br>
-
-          <!-- ngFor -->
-          <li><b>ngFor-</b></li>
-          <li>Create a property <i>users</i> which is an array of objects.</li>
-          <li>Each user object consists of a name and age property.</li>
-          <li>Create some dummy data in the users array. (create a class maybe? or not.)</li>
-          <li>Display each user's details (name and age used in proper sentence) as a list item in an unordered list under the previously added paragraphs in the template.</li>
-          <!-- end ngFor -->          
-        </ul>
-      </li>
+      <li><a href="https://getbootstrap.com/docs/3.4/css/#images-responsive" target="_blank">img-responsive</a></li>
+      <li>Helper classes <a href="https://getbootstrap.com/docs/3.4/css/#helper-classes" target="_blank">here</a></li>
+      <li>Google Fonts <a href="https://www.google.com/fonts" target="_blank">here</a></li>
+      <li>Font Awesome <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">here</a></li>
     </ul>
   </div>
 </div>
-<!-- End Built-in Directives Recap -->
+<!-- End Bootstrap Helper Classes -->

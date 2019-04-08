@@ -3,116 +3,120 @@
   <div class="col-md-9">
     <ul class="point">
       <li class="link"
-          (click)="scrollIntoView('assignments')"> Assignments</li>
-      <li class="link" 
-          (click)="scrollIntoView('asgmt-1')"> Practicing Databinding</li>
+        (click)="scrollIntoView('maps')"> Google Maps</li>
+      <li class="link"
+        (click)="scrollIntoView('audio-video')"> Audio &amp; Video</li>
+      <li class="link"
+        (click)="scrollIntoView('media')"> Media View Port and Media Queries</li>
+      <li class="link"
+        (click)="scrollIntoView('flex')"> Flexbox</li>
+      <li class="link"
+        (click)="scrollIntoView('oocss')"> OOCSS</li>
+      <li class="link"
+        (click)="scrollIntoView('tree')"> CSS Family Tree</li>
+      <li class="link"
+        (click)="scrollIntoView('animate')"> CSS Transform &amp; Animations</li>
     </ul>
   </div>
 </div>
 
-<!-- Assignments -->
-<div class="row" id="assignments">
-  <h2 class="col-md-3">Assignments</h2>
+<!-- Maps -->
+<div class="row" id="maps">
+  <h2 class="col-md-3">Google Maps</h2>
   <div class="col-md-9">
-    <p class="point text-justify">
-      <code>
-        <b>NOTE:</b> Complete <i>Practicing Components</i> assignment mentioned <a href="https://pratimasakinala.github.io/angular2course/#/lessons/1/3" target="_blank">here</a>. Then continue working on below assignments.
-      </code>
-    </p>
-    <div class="point">
-      <p>For each assignment listed below:</p>
-      <ul>
-        <li>Create a new Angular project (unless stated otherwise).</li>
-        <li>Push up to Github before making any changes to the project.</li>
-        <li>Create a new branch (give appropriate name) and complete the instructions outlined in that branch.</li>
-        <li>Explain why you chose the approach you took? Which problems did you encounter? (add these to a Readme file).</li>
-        <li>Create a Pull Request between your branch and master.</li>
-        <li>Share the link to your PR with me or tag me as a reviewer (GH username: <code>pratimasakinala</code>).</li>
-      </ul>
-    </div>
+    <ul class="point">
+      <li><a href="https://www.google.com/maps/@36.6162087,-119.1390356,12z" target="_blank">Google Maps</a></li>
+      <li>Enter an address</li>
+      <li>Use the embed to add it to our site!</li>
+    </ul>
   </div>
 </div>
-<!-- End Assignments -->
+<!-- End Maps -->
 
-<!-- Practicing Databinding -->
-<div class="row" id="asgmt-1">
-  <h2 class="col-md-3">Practicing Databinding</h2>
+<!-- Audio &amp; Video -->
+<div class="row" id="audio-video">
+  <h2 class="col-md-3">Audio &amp; Video</h2>
   <div class="col-md-9">
-    <div class="point">
-      <p><b>Practice 1 (String Interpolation):</b></p>
-      <ul>
-        <li>Create a <i>heading</i> property in AppComponent and set it to "Person Details".</li>
-        <li>Create a <i>person</i> property of type any.</li>
-        <li>Set <i>person</i> to be an object consisting of name (empty object) and gender (empty string) keys.</li>
-        <li>The name key in <i>person</i> should have <i>first</i> and <i>last</i> keys (both of type string and set to some default values).</li>
-        <li>In the template, display the heading followed by a paragraph.</li>
-        <li>
-          Output below message in the paragraph-
-          <br>
-          <code>
-            Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br> 
-            City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-          </code>
-        </li>
-        <li>In the Name section in the paragraph above, display 'Mr' or 'Mrs' based on the gender of the person. (for example: Mr John Doe)</li>
-        <li>In the City section, check if <i>person</i> property has a <i>address</i> key. If it exists, display its value. Otherwise leave the text blank.</li>
-      </ul>
-    </div>
-    <div class="point">
-      <p><b>Practice 2 (String Interpolation):</b></p>
-      <ul>
-        <li>Create two properties (<i>first</i> and <i>second</i>) of type number in AppComponent and set some default values.</li>
-        <li>Output these properties in the template.</li>
-        <li>Output the sum of these properties in the template (Sum of numbers: ___).</li>
-        <li>Output the largest of these property values in the template (Largest of numbers: ___).</li>
-      </ul>
-    </div>
-    <div class="point">
-      <p><b>Practice 3 (Property Binding):</b></p>
-      <ul>
-        <li>Create a class <i>Person</i> (fields: name, gender and rating).</li>
-        <li>Set appropriate types to above fields.</li>
-        <li>Create two properties <i>female</i> and <i>male</i>.</li>
-        <li>Set these properties to be instances of Person class (initialize with appropriate values (gender: 'f' for female) and (gender: 'm' for male)).</li>
-        <li>Create a <i>person</i> property.</li>
-        <li>Create a method that randomly pick between <i>female</i> and <i>male</i> properties and sets it to <i>person</i> property.</li>
-        <li>In the template:
-          <ul>
-            <li>Use property binding to set an h1 tag's content (textContent) to be "Name: ___ ". Fill in the blank with <i>person</i>'s name.</li>
-            <li>Add two buttons below the h1. One should say "Male" and other "Female".</li>
-            <li>These buttons should be disabled if <i>person</i>'s gender is male or female respectively.</li>
-            <li>On clicking the buttons, <i>person</i> should be set to the opposite gender.</li>
-            <li>(For example, if person is originally set to female, only Male button should be enabled. And on clicking this button, person should be set to male. And hence the button should be disabled.)</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="point">
-      <p><b>Practice 4:</b></p>
-      <ul>
-        <li>Call this project <i>monster-fight</i>.</li>
-        <li>Work on each of below sections in separate branches (appropriately named).</li>
-        <li>
-          <p><b>String Interpolation:</b></p>
-          <ul>
-            <li>Create a <i>monsterName</i> property of type string in AppComponent.</li>
-            <!-- <li>Add an Input field which updates a property <i>monsterName</i> via Two-Way-Binding.</li> -->
-            <li>Output the <i>monsterName</i> property in a paragraph<!-- below the input-->.</li>
-          </ul>
-        </li>
-        <li>
-          <p><b>Property Binding:</b></p>
-          <ul>
-            <li>Add a button (below the paragraph) which may only be clicked if the <i>monsterName</i> is NOT an empty string.</li>
-            <li>Upon clicking the button, generate a random power value for the monster and store it in a property (appropriately named).</li>
-            <li>Display a message (with monsterName and power included) below the button for all monsters created.</li>
-            <li>Test functionality by adding/removing value of monsterName property.</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+    <ul class="point">
+      <li>Click <a href="https://www.w3schools.com/html/html5_audio.asp" target="_blank" >here</a> to learn about audio</li>
+      <li>
+        <audio controls>
+          <source src="./assets/lightsaber.wav" type="audio/wav">
+        </audio>
+      </li>
+      <li>Click <a href="https://www.w3schools.com/html/html5_video.asp"  target="_blank">here</a> to learn about embedded video</li>
+      <video width="400" height="400" controls>
+        <source src="example.mov" type="video/mp4">
+      </video>
+      <li>Or, you can use <a href="https://www.youtube.com/" target="_blank">YouTube</a> to embed them!</li>
+    </ul>
+    <span class="col-md-8 col-md-offset-2">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0LHxvxdRnYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </span>
   </div>
 </div>
-<!-- End Practicing Databinding -->
+<!-- End Audio &amp; Video -->
+
+<!-- Media View Port and Media Queries -->
+<div class="row" id="media">
+  <h2 class="col-md-3">Media View Port and Media Queries</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Media View Port <a href="https://www.w3schools.com/css/css_rwd_viewport.asp">Click Here</a></li>
+      <li>Media Queries <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">Click Here</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End Media View Port and Media Queries -->
+
+<!-- Flexbox -->
+<div class="row" id="flex">
+  <h2 class="col-md-3">Flexbox</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Flexbox in <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks</a></li>
+      <li>Play Flexbox Froggy <a href="http://flexboxfroggy.com/" target="_blank">here</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End Flexbox -->
+
+<!-- OOCSS -->
+<div class="row" id="oocss">
+  <h2 class="col-md-3">OOCSS</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li><a href="https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/" target="_blank">OOCSS</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End OOCSS -->
+
+<!-- CSS Family Tree -->
+<div class="row" id="tree">
+  <h2 class="col-md-3">CSS Family Tree</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>:children  click <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_selectors" target="_blank">here</a>.</li>
+      <!-- <li>nth-child click <a href="https://css-tricks.com/almanac/selectors/n/nth-child/" target="_blank">here</a>.</li> -->
+      <li>Whats this Tilde thing <a href="http://stackoverflow.com/questions/10782054/what-does-the-tilde-squiggle-twiddle-css-selector-mean" target="_blank">(~)</a> all about?</li>
+    </ul>
+  </div>
+</div>
+<!-- End CSS Family Tree -->
+
+<!-- CSS Transform &amp; Animations -->
+<div class="row">
+  <h2 class="col-md-3">CSS Transform &amp; Animations</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Do we <strong>need</strong> JS to make elements react?</li>
+      <li><a href="https://css-tricks.com/almanac/properties/t/transform/#article-header-id-3" target="_blank">Translate</a></li>
+      <li>A little more in-depth <a href="http://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">reference</a></li>
+      <li>How about we <a href="https://css-tricks.com/almanac/properties/t/transform/#article-header-id-7" target="_blank">3D</a> this sucker?</li>
+      <li><a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank">Animations</a>, anyone?</li>
+      <li><a href="http://www.w3schools.com/css/css3_animations.asp" target="_blank">More</a> detail about animations</li>
+    </ul>
+  </div>
+</div>
+<!-- End CSS Transform &amp; Animations -->

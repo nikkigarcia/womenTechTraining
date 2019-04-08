@@ -24,23 +24,23 @@ export class LessonsComponent implements OnInit {
           this.day = +params['day'];
           break;
         case 2:
-          this.day = +params['day'] + 4;
+          this.day = +params['day'] + 2;
           break;
         case 3:
-          this.day = +params['day'] + 9;
+          this.day = +params['day'] + 5;
           break;
         case 4:
-          this.day = +params['day'] + 14;
+          this.day = +params['day'] + 8;
           break;
         case 5:
-          this.day = +params['day'] + 19;
+          this.day = +params['day'] + 11;
           break;
         case 6:
-          this.day = +params['day'] + 24;
+          this.day = +params['day'] + 14;
           break;
       }
 
-      this.setTitle(`Women Tech Training (Day ${this.day})`);
+      this.setTitle(`Yes She Can! (Day ${this.day})`);
     });
 
     // scroll to the top of the page on route change
