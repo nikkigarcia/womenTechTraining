@@ -3,24 +3,88 @@
   <div class="col-md-9">
     <ul class="point">
       <li class="link"
+        (click)="scrollIntoView('position')"> Position Property</li>
+      <li class="link"
+        (click)="scrollIntoView('hover')"> Hover</li>
+      <li class="link"
+        (click)="scrollIntoView('fonts')"> Fonts</li>
+      <li class="link"
+        (click)="scrollIntoView('anchor')"> Links using the Anchor Tag</li>
+      <li class="link"
+        (click)="scrollIntoView('maps')"> Google Maps</li>
+      <li class="link"
         (click)="scrollIntoView('audio-video')"> Audio &amp; Video</li>
       <li class="link"
         (click)="scrollIntoView('media')"> Media View Port and Media Queries</li>
-      <li class="link"
-        (click)="scrollIntoView('flex')"> Flexbox</li>
-      <li class="link"
-        (click)="scrollIntoView('oocss')"> OOCSS</li>
-      <li class="link"
-        (click)="scrollIntoView('tree')"> CSS Family Tree</li>
-      <li class="link"
-        (click)="scrollIntoView('animate')"> CSS Transform &amp; Animations</li>
-      <li class="link"
-        (click)="scrollIntoView('bootstrap')"> Bootstrap</li>
-      <li class="link"
-        (click)="scrollIntoView('helpers')"> Bootstrap Helper Classes</li>
     </ul>
   </div>
 </div>
+
+<!-- Position Property -->
+<div class="row" id="position">
+  <h2 class="col-md-3">Position Property</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li><a href="http://www.w3schools.com/cssref/pr_class_position.asp" target="_blank">Position</a> property</li>
+      <li><code>Fixed</code> nav vs. <code>static</code> nav</li>
+    </ul>
+  </div>
+</div>
+<!-- End Position Property -->
+
+<!-- Hover -->
+<div class="row" id="hover">
+  <h2 class="col-md-3">Hover</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>What's the <a href="http://www.w3schools.com/cssref/sel_hover.asp" target="_blank">hover</a> selector?</li>
+      <li>When should we use them?</li>
+    </ul>
+  </div>
+</div>
+<!-- End Hover -->
+
+<!-- Fonts -->
+<div class="row" id="fonts">
+  <h2 class="col-md-3">Fonts</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+      <li>Explore the data collection of Google!</li>
+      <li>Serif vs. Sans-serif</li>
+      <li><a href="https://www.w3schools.com/cssref/pr_font_font-family.asp" target="_blank">font-family</a></li>
+      <li><a href="https://www.w3schools.com/cssref/pr_font_weight.asp" target="_blank">font-weight</a></li>
+      <li><a href="https://www.w3schools.com/cssref/css3_pr_text-shadow.asp" target="_blank">text-shadow</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End Fonts -->
+
+<!-- Links using the Anchor Tag -->
+<div class="row" id="anchor">
+  <h2 class="col-md-3"> Links using the Anchor Tag</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>What's an <a href="https://www.w3schools.com/TAgs/tag_a.asp" target="_blank">anchor</a> tag?</li>
+      <li>How do we open our link in a new tab?</li>
+      <li>What can we make into a link?</li>
+    </ul>
+  </div>
+</div>
+<!-- End Links using the Anchor Tag -->
+
+<!-- Maps -->
+<div class="row" id="maps">
+  <h2 class="col-md-3">Google Maps</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li><a href="https://www.google.com/maps/@36.6162087,-119.1390356,12z" target="_blank">Google Maps</a></li>
+      <li>Enter an address</li>
+      <li>Use the embed to add it to our site!</li>
+    </ul>
+  </div>
+</div>
+<!-- End Maps -->
 
 <!-- Audio &amp; Video -->
 <div class="row" id="audio-video">
@@ -34,9 +98,9 @@
         </audio>
       </li>
       <li>Click <a href="https://www.w3schools.com/html/html5_video.asp"  target="_blank">here</a> to learn about embedded video</li>
-      <video width="400" height="400" controls>
+      <!-- <video width="400" height="400" controls>
         <source src="example.mov" type="video/mp4">
-      </video>
+      </video> -->
       <li>Or, you can use <a href="https://www.youtube.com/" target="_blank">YouTube</a> to embed them!</li>
     </ul>
     <span class="col-md-8 col-md-offset-2">
@@ -57,84 +121,3 @@
   </div>
 </div>
 <!-- End Media View Port and Media Queries -->
-
-<!-- Flexbox -->
-<div class="row" id="flex">
-  <h2 class="col-md-3">Flexbox</h2>
-  <div class="col-md-9">
-    <ul class="point">
-      <li>Flexbox in <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks</a></li>
-      <li>Play Flexbox Froggy <a href="http://flexboxfroggy.com/" target="_blank">here</a></li>
-    </ul>
-  </div>
-</div>
-<!-- End Flexbox -->
-
-<!-- OOCSS -->
-<div class="row" id="oocss">
-  <h2 class="col-md-3">OOCSS</h2>
-  <div class="col-md-9">
-    <ul class="point">
-      <li><a href="https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/" target="_blank">OOCSS</a></li>
-    </ul>
-  </div>
-</div>
-<!-- End OOCSS -->
-
-<!-- CSS Family Tree -->
-<div class="row" id="tree">
-  <h2 class="col-md-3">CSS Family Tree</h2>
-  <div class="col-md-9">
-    <ul class="point">
-      <li>:children  click <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_selectors" target="_blank">here</a>.</li>
-      <!-- <li>nth-child click <a href="https://css-tricks.com/almanac/selectors/n/nth-child/" target="_blank">here</a>.</li> -->
-      <li>Whats this Tilde thing <a href="http://stackoverflow.com/questions/10782054/what-does-the-tilde-squiggle-twiddle-css-selector-mean" target="_blank">(~)</a> all about?</li>
-    </ul>
-  </div>
-</div>
-<!-- End CSS Family Tree -->
-
-<!-- CSS Transform &amp; Animations -->
-<div class="row">
-  <h2 class="col-md-3">CSS Transform &amp; Animations</h2>
-  <div class="col-md-9">
-    <ul class="point">
-      <li>Do we <strong>need</strong> JS to make elements react?</li>
-      <li><a href="https://css-tricks.com/almanac/properties/t/transform/#article-header-id-3" target="_blank">Translate</a></li>
-      <li>A little more in-depth <a href="http://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">reference</a></li>
-      <li>How about we <a href="https://css-tricks.com/almanac/properties/t/transform/#article-header-id-7" target="_blank">3D</a> this sucker?</li>
-      <li><a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank">Animations</a>, anyone?</li>
-      <li><a href="http://www.w3schools.com/css/css3_animations.asp" target="_blank">More</a> detail about animations</li>
-    </ul>
-  </div>
-</div>
-<!-- End CSS Transform &amp; Animations -->
-
-<!-- Bootstrap -->
-<div class="row" id="bootstrap">
-  <h2 class="col-md-3">Bootstrap</h2>
-  <div class="col-md-9">
-    <ul class="point">
-      <li>Click <a href="http://getbootstrap.com/getting-started/#download" target="_blank">here</a> to download Bootstrap.</li>
-      <li>Copy Files</li>
-      <li>In order to use a framework, you have to reference it. The two ways we will talk about are using a <a href="https://www.bootstrapcdn.com/" target="_blank">CDN</a> and native linking.</li>
-      <li>Read more <a href="https://en.wikipedia.org/wiki/Content_delivery_network" target="_blank">here</a>.</li>
-    </ul>
-    <p class="point">Understanding Bootstrap <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php" target="_blank">Grid System</a> and <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">more</a>.</p>
-  </div>
-</div>
-<!-- End Bootstrap -->
-
-<!-- Bootstrap Helper Classes -->
-<div class="row" id="helpers">
-  <h2 class="col-md-3">Bootstrap Helper Classes</h2>
-  <div class="col-md-9">
-    <ul class="point">
-      <li><a href="https://getbootstrap.com/docs/3.4/css/#images-responsive" target="_blank">img-responsive</a></li>
-      <li>Helper classes <a href="https://getbootstrap.com/docs/3.4/css/#helper-classes" target="_blank">here</a></li>
-      <li>Google Fonts <a href="https://www.google.com/fonts" target="_blank">here</a></li>
-      <li>Font Awesome <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">here</a></li>
-    </ul>
-  </div>
-</div>
-<!-- End Bootstrap Helper Classes -->
