@@ -3,7 +3,13 @@
   <div class="col-md-9">
     <ul class="point">
       <li class="link"
-        (click)="scrollIntoView('flex')"> Flexbox</li>
+        (click)="scrollIntoView('anchor')"> Links using the Anchor Tag</li>
+      <li class="link"
+        (click)="scrollIntoView('maps')"> Google Maps</li>
+      <li class="link"
+        (click)="scrollIntoView('audio-video')"> Audio &amp; Video</li>
+      <li class="link"
+        (click)="scrollIntoView('media')"> Media View Port and Media Queries</li>
       <li class="link"
         (click)="scrollIntoView('oocss')"> OOCSS</li>
       <li class="link"
@@ -11,24 +17,72 @@
       <li class="link"
         (click)="scrollIntoView('animate')"> CSS Transform &amp; Animations</li>
       <li class="link"
-        (click)="scrollIntoView('bootstrap')"> Bootstrap</li>
-      <li class="link"
-        (click)="scrollIntoView('helpers')"> Bootstrap Helper Classes</li>
+        (click)="scrollIntoView('flex')"> Flexbox</li>
     </ul>
   </div>
 </div>
 
-<!-- Flexbox -->
-<div class="row" id="flex">
-  <h2 class="col-md-3">Flexbox</h2>
+<!-- Links using the Anchor Tag -->
+<div class="row" id="anchor">
+  <h2 class="col-md-3"> Links using the Anchor Tag</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li>Flexbox in <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks</a></li>
-      <li>Play Flexbox Froggy <a href="http://flexboxfroggy.com/" target="_blank">here</a></li>
+      <li>What's an <a href="https://www.w3schools.com/TAgs/tag_a.asp" target="_blank">anchor</a> tag?</li>
+      <li>How do we open our link in a new tab?</li>
+      <li>What can we make into a link?</li>
     </ul>
   </div>
 </div>
-<!-- End Flexbox -->
+<!-- End Links using the Anchor Tag -->
+
+<!-- Maps -->
+<div class="row" id="maps">
+  <h2 class="col-md-3">Google Maps</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li><a href="https://www.google.com/maps/@36.6162087,-119.1390356,12z" target="_blank">Google Maps</a></li>
+      <li>Enter an address</li>
+      <li>Use the embed to add it to our site!</li>
+    </ul>
+  </div>
+</div>
+<!-- End Maps -->
+
+<!-- Audio &amp; Video -->
+<div class="row" id="audio-video">
+  <h2 class="col-md-3">Audio &amp; Video</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Click <a href="https://www.w3schools.com/html/html5_audio.asp" target="_blank" >here</a> to learn about audio</li>
+      <li>
+        <audio controls>
+          <source src="./assets/lightsaber.wav" type="audio/wav">
+        </audio>
+      </li>
+      <li>Click <a href="https://www.w3schools.com/html/html5_video.asp"  target="_blank">here</a> to learn about embedded video</li>
+      <!-- <video width="400" height="400" controls>
+        <source src="example.mov" type="video/mp4">
+      </video> -->
+      <li>Or, you can use <a href="https://www.youtube.com/" target="_blank">YouTube</a> to embed them!</li>
+    </ul>
+    <span class="col-md-8 col-md-offset-2">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0LHxvxdRnYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </span>
+  </div>
+</div>
+<!-- End Audio &amp; Video -->
+
+<!-- Media View Port and Media Queries -->
+<div class="row" id="media">
+  <h2 class="col-md-3">Media View Port and Media Queries</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Media View Port <a href="https://www.w3schools.com/css/css_rwd_viewport.asp">Click Here</a></li>
+      <li>Media Queries <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">Click Here</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End Media View Port and Media Queries -->
 
 <!-- OOCSS -->
 <div class="row" id="oocss">
@@ -70,31 +124,14 @@
 </div>
 <!-- End CSS Transform &amp; Animations -->
 
-<!-- Bootstrap -->
-<div class="row" id="bootstrap">
-  <h2 class="col-md-3">Bootstrap</h2>
+<!-- Flexbox -->
+<div class="row" id="flex">
+  <h2 class="col-md-3">Flexbox</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li>Click <a href="http://getbootstrap.com/getting-started/#download" target="_blank">here</a> to download Bootstrap.</li>
-      <li>Copy Files</li>
-      <li>In order to use a framework, you have to reference it. The two ways we will talk about are using a <a href="https://www.bootstrapcdn.com/" target="_blank">CDN</a> and native linking.</li>
-      <li>Read more <a href="https://en.wikipedia.org/wiki/Content_delivery_network" target="_blank">here</a>.</li>
-    </ul>
-    <p class="point">Understanding Bootstrap <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php" target="_blank">Grid System</a> and <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">more</a>.</p>
-  </div>
-</div>
-<!-- End Bootstrap -->
-
-<!-- Bootstrap Helper Classes -->
-<div class="row" id="helpers">
-  <h2 class="col-md-3">Bootstrap Helper Classes</h2>
-  <div class="col-md-9">
-    <ul class="point">
-      <li><a href="https://getbootstrap.com/docs/3.4/css/#images-responsive" target="_blank">img-responsive</a></li>
-      <li>Helper classes <a href="https://getbootstrap.com/docs/3.4/css/#helper-classes" target="_blank">here</a></li>
-      <li>Google Fonts <a href="https://www.google.com/fonts" target="_blank">here</a></li>
-      <li>Font Awesome <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">here</a></li>
+      <li>Flexbox in <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks</a></li>
+      <li>Play Flexbox Froggy <a href="http://flexboxfroggy.com/" target="_blank">here</a></li>
     </ul>
   </div>
 </div>
-<!-- End Bootstrap Helper Classes -->
+<!-- End Flexbox -->
