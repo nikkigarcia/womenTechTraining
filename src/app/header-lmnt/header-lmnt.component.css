@@ -260,7 +260,8 @@ body.menu-active {
 }
 
 .sub-menu {
-	width: auto;
+	/* width: auto; */
+	width: 250px;
 	/* width: 475px; */
 }
 
@@ -274,18 +275,18 @@ body.menu-active {
 
 @media(max-width: 890px) {
 	.sub-menu {
-		/* width: 275px; */
+		width: 240px;
 	}
 
-	.sub-menu .row .border-bottom {
+	/* .sub-menu .row .border-bottom {
 		border-bottom: 1px solid white;
-	}
+	} */
 }
 
 @media(max-width: 560px) {
 	.sub-menu {
-		/* width: 200px;
-		height: 500px !important; */
+		width: 200px;
+		/* height: 500px !important; */
 	}
 
 	.sub-menu .row .bottom-border {
