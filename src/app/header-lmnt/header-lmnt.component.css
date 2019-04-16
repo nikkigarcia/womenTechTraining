@@ -260,8 +260,8 @@ body.menu-active {
 }
 
 .sub-menu {
-	/* width: auto; */
-	width: 250px;
+	width: auto;
+	/* width: 250px; */
 	/* width: 475px; */
 }
 
@@ -274,9 +274,9 @@ body.menu-active {
 }
 
 @media(max-width: 890px) {
-	.sub-menu {
+	/* .sub-menu {
 		width: 240px;
-	}
+	} */
 
 	/* .sub-menu .row .border-bottom {
 		border-bottom: 1px solid white;
@@ -285,7 +285,7 @@ body.menu-active {
 
 @media(max-width: 560px) {
 	.sub-menu {
-		width: 200px;
+		/* width: 200px; */
 		/* height: 500px !important; */
 	}
 
