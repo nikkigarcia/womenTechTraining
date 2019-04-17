@@ -295,7 +295,7 @@ body.menu-active {
 }
 
 @media(max-width: 455px) {
-	.sub-menu {
+	/* .sub-menu {
 		width: auto;
-	}
+	} */
 }
