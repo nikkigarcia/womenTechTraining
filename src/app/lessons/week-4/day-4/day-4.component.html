@@ -1,0 +1,91 @@
+<div class="row">
+  <h2 class="col-md-3">Concepts</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li class="link"
+          (click)="scrollIntoView('assignments')"> Assignments</li>
+      <li class="link"
+          (click)="scrollIntoView('asgmt-1')"> Practicing Nested Loops</li>
+      <li class="link"
+          (click)="scrollIntoView('asgmt-2')"> Continue Rebuilding Recipe Book Application</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Assignments -->
+<div class="row" id="assignments">
+  <h2 class="col-md-3">Assignments</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <p>For each assignment listed below:</p>
+      <ul>
+        <li>Create a new Angular project (unless stated otherwise).</li>
+        <li>Push up to Github before making any changes to the project.</li>
+        <li>Create a new branch (give appropriate name) and complete the instructions outlined in that branch.</li>
+        <li>Explain why you chose the approach you took? Which problems did you encounter? (add these to a Readme file).</li>
+        <li>Create a Pull Request between your branch and master.</li>
+        <li>Share the link to your PR with me or tag me as a reviewer (GH username: <code>pratimasakinala</code>).</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Assignments -->
+
+<!-- Practicing Nested Loops -->
+<div class="row" id="asgmt-1">
+  <h2 class="col-md-3">Practicing Nested Loops</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <p><b>Practice 1:</b></p>
+      <ul>
+        <li>Create a <i>bools</i> property that is of type array of boolean values.</li>
+        <li>Assign <code>true, false</code> as values of <i>bools</i> array.</li>
+        <hr>
+        <li>Create a <i>nums</i> property that is of type array of numeric values.</li>
+        <li>Assign <code>1, 2.5, 5</code> as values of <i>nums</i> array.</li>   
+        <hr>         
+        <li>Create a <i>strs</i> property that is of type array of string values.</li>
+        <li>Assign <code>hi, there</code> as values of <i>strs</i> array.</li>
+        <hr>      
+        <li>Create a <i>test</i> property that is of type object.</li>
+        <li>Assign <code>id: 1, name: 'test'</code> as value of <i>test</i> object.</li> 
+        <li>Create a <i>user</i> property that is of type object.</li>
+        <li>Assign <code>id: 2, name: 'user'</code> as value of <i>user</i> object.</li>
+        <li>Create a <i>objs</i> property that is of type array of object values.</li>
+        <li>Assign <i>test</i> and <i>user</i> properties as values of <i>objs</i> array.</li>
+        <hr>      
+        <li>Create a <i>types</i> property that is of type array of any values.</li>
+        <li>Assign <i>bools</i>, <i>nums</i>, <i>strs</i> and <i>objs</i> properties as values of <i>objs</i> array.</li>             
+        <hr>      
+        <li>Create a <i>getTypeof</i> method that takes in an argument and returns <code>typeof</code> of the argument.</li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 2:</b></p>
+      <ul>
+        <li>Continue working on above project.</li>
+        <li>Create a new branch (branch off of previous branch).</li>
+        <li>In the template, display "Types" in a header element.</li>
+        <li>Create an un-ordered list under the header with a li tag.</li>
+        <li>Loop through <i>types</i> (call variable <i>type</i> & capture the index).</li>
+        <li>Inside above li, add a paragraph that has <code>text-transform: capitalize</code> style applied.</li>
+        <li>This paragraph should display the <i>typeof</i> of <i>type</i> variable (use getTypeof method).</li>
+        <li>Along with the paragraph, add an un-ordered list (inside the above li) which loops through each element in the <i>type</i> variable (call variable <i>val</i>.</li>
+        <li>Inside above li, do a ternary check.</li>
+        <li>The ternary condition: <code>typeof of <i>val</i> is 'object'</code>.</li>
+        <li>If this condition is true, display <i>id</i> and <i>name</i> of <i>val</i> variable.</li>
+        <li>Else display <i>val</i> variable.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Practicing Nested Loops -->
+
+<!-- Continue Rebuilding Recipe Book Application -->
+<div class="row" id="asgmt-2">
+  <h2 class="col-md-3">Continue Rebuilding Recipe Book Application</h2>
+  <div class="col-md-9">
+    <p class="point">Continue rebuild our recipe book application from scratch using instructions starting on Day 4 - Course Project (The Basics). </p>
+  </div>
+</div>
+<!-- End Continue Rebuilding Recipe Book Application -->

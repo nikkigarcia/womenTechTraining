@@ -1,0 +1,91 @@
+<div class="row">
+  <h2 class="col-md-3">Concepts</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li class="link"
+          (click)="scrollIntoView('assignments')"> Assignments</li>
+      <li class="link" 
+          (click)="scrollIntoView('merge-recipe-book')"> Merge Recipe-book branches</li>
+      <li class="link" 
+          (click)="scrollIntoView('asgmt-1')"> Practice Services</li>
+      <li class="link" 
+          (click)="scrollIntoView('asgmt-2')"> <b>Additional Challenge:</b> Practice Routing</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Assignments -->
+<div class="row" id="assignments">
+  <h2 class="col-md-3">Assignments</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <p>For each assignment listed below:</p>
+      <ul>
+        <li>Create a new Angular project (unless stated otherwise).</li>
+        <li>Push up to Github before making any changes to the project.</li>
+        <li>Create a new branch (give appropriate name) and complete the instructions outlined in that branch.</li>
+        <li>Explain why you chose the approach you took? Which problems did you encounter? (add these to a Readme file).</li>
+        <li>Create a Pull Request between your branch and master.</li>
+        <li>Share the link to your PR with me or tag me as a reviewer (GH username: <code>pratimasakinala</code>).</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Assignments -->
+
+<!-- Merge Recipe-book branches -->
+<div class="row" id="merge-recipe-book">
+  <h2 class="col-md-3">Merge Recipe-book branches</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Working with a partner, merge all branches in recipe-book into master in proper order.</li>
+      <li>Remember to rebase and push to already pushed branches with force flag.</li>
+      <li>Take a look at the order of topics covered to determine the order of branches to be merged.</li>
+    </ul>
+  </div>
+</div>
+<!-- End Merge Recipe-book branches -->
+
+<!-- Practice Services -->
+<div class="row" id="asgmt-1">
+  <h2 class="col-md-3">Practice Services</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <p><b>Practice 1:</b></p>
+      <ul>
+        <li>Create a <i>invention</i> model with <i>name</i>, <i>invention</i> and <i>year</i> properties.</li>
+        <li>Create an <i>inventions</i> property in AppComponent that can store an array of inventions.</li>
+        <li>Add some test data to <i>inventions</i> array.</li>
+        <li>Create 3 inputs in AppComponent template to set <i>name</i>, <i>invention</i> and <i>year</i> properties in AppComponent.</li>
+        <li>Add a button below the inputs.</li>
+        <li>On clicking this button, save the input values as a new instance of <i>Invention</i> model and push to the <i>inventions</i> array.</li>
+        <li>Under the button, display the list of all inventions.</li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 2:</b></p>
+      <ul>
+        <li>Continue working on above project, create a new branch off of practice 1 branch.</li>
+        <li>Create a <i>InventionService</i> and move <i>inventions</i> list to this service for central data management.</li>
+        <li>Make this list private so it is not accessible from outside directly.</li>
+        <li>Create a getter method called <i>getInventions</i> that returns a copy of <i>inventions</i> array.</li>
+        <li>Optimize the app by using this new service.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Practice Services -->
+
+<!-- Additional Challenge: Practice Routing -->
+<div class="row" id="asgmt-2">
+  <h2 class="col-md-3">Additional Challenge: Practice Routing</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Working on original recipe-book application, create a <i>practice-routing</i> branch (branch off of services branch).</li>
+      <li>Create basic route path configurations for the application.</li>
+      <li>Use this route configuration for navigating between recipe and shopping-list features.</li>
+    </ul>
+  </div>
+</div>
+<!-- End Additional Challenge: Practice Routing -->

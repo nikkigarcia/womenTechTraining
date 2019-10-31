@@ -1,0 +1,19 @@
+.scroll-to-top {
+    background-color: lightgrey;
+    color: #7A1501;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    outline: none;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 14px;
+    transition: all .2s ease-in-out;
+    display: none;
+}
+
+.scroll-to-top:hover {
+    transform: scale(1.1);
+}

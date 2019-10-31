@@ -1,0 +1,12 @@
+<div (window:scroll)="showScrollButton()">
+    <header-lmnt></header-lmnt>
+    <main class="content container">
+        <router-outlet></router-outlet>
+    </main>
+    <button class="btn scroll-to-top" 
+            id="scroll-to-top" 
+            title="Go to top" 
+            (click)="scrollToTop()">
+    <i class="fa fa-chevron-up"></i>      
+    </button>
+</div>

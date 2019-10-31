@@ -1,0 +1,112 @@
+<div class="row">
+  <h2 class="col-md-3">Concepts</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li class="link"
+          (click)="scrollIntoView('assignments')"> Assignments</li>
+      <li class="link"
+          (click)="scrollIntoView('asgmt-1')"> Practicing Typescript</li>
+      <li class="link" 
+          (click)="scrollIntoView('asgmt-2')"> Practicing Components</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Assignments -->
+<div class="row" id="assignments">
+  <h2 class="col-md-3">Assignments</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <p>For each assignment listed below:</p>
+      <ul>
+        <li>Create a new Angular project for every practice (unless stated otherwise).</li>
+        <li>Push up to Github before making any changes to the project.</li>
+        <li>Create a new branch (give appropriate name) and complete the instructions outlined in the practice in that branch.</li>
+        <li>Explain why you chose the approach you took? Which problems did you encounter? (add these to a Readme file).</li>
+        <li>Create a Pull Request between your branch and master.</li>
+        <li>Share the link to your PR with me or tag me as a reviewer (GH username: <code>pratimasakinala</code>).</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Assignments -->
+
+<!-- Practicing Typescript -->
+<div class="row" id="asgmt-1">
+  <h2 class="col-md-3">Practicing Typescript</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <!-- https://basarat.gitbooks.io/typescript/docs/classes.html -->
+      <p><b>Practice 1 (Class & Class Inheritance):</b></p>
+      <ul>
+        <li>Create a class <i>Point</i>.</li>
+        <li>Define <i>x</i> and <i>y</i> fields of type number.</li>
+        <li>Define a constructor that sets these fields.</li>
+        <li>Create a method <i>add</i> that takes in an argument (newPoint) of type Point.</li>
+        <li><i>add</i> method should return a new Point generated having x value to be the sum of existing point's x and newPoint's x. Same with the y value.</li>
+        <li>Create two variables <i>p1</i> and <i>p2</i> which are instances of Point class.</li>
+        <li>Create a third variable <i>p3</i> which adds <i>p2</i> to <i>p1</i> (p1.add(p2)). Print this variable's value to the console.</li>
+      </ul>
+      <hr>
+      <ul>
+        <li>Create a derived class <i>Point3D</i> (base class = Point).</li>
+        <li>Add <i>z</i> field of type number.</li>
+        <li>Setup the constructor to set x and y fields in the base class and z field.</li>
+        <li>Create a method <i>add</i> that takes in an argument (new3DPoint) of type Point3D.</li>
+        <li>In this method, add respective fields of existing point3D and new3DPoint and return the value.</li>
+        <li>Create two variables <i>p3D1</i> and <i>p3D2</i> which are instances of Point3D class.</li>
+        <li>Create a third variable <i>p3D3</i> which adds <i>p3D2</i> to <i>p3D1</i>. Print this variable's value to the console.</li>
+      </ul>
+    </div>
+    <div class="point">
+      <!-- https://www.tutorialspoint.com/typescript/typescript_interfaces.htm -->
+      <p><b>Practice 2 (Interface):</b></p>
+      <ul>
+        <li>Create an interface <i>Person</i>.</li>
+        <li>Define firstName, lastName fields and sayHi method, all of string type.</li>
+        <li>Create a <i>customer</i> variable that is of Person type.</li>
+        <li>Set some values to the fields. Set sayHi method to return "Hi there" message.</li>
+        <li>Create an <i>employee</i> variable that is also of type Person.</li>
+        <li>Set some values to the fields with sayHi returning "Hello!!" message.</li>
+        <li>Print both customer and employee variables to the console.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Practicing Typescript -->
+
+<!-- Practicing Components -->
+<div class="row" id="asgmt-2">
+  <h2 class="col-md-3">Practicing Components</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Create three new Components: <i>WarningMessage</i> (manually), <i>SuccessMessage</i> (using CLI) and <i>DangerMessage</i> (either).</li>
+      <li>For WarningMessage Component: 
+        <ul>
+          <li>use inline template and external styles.</li>
+          <li>use default selector.</li>
+        </ul>
+      </li>
+      <li>For SuccessMessage Component: 
+        <ul>
+          <li>use external template and inline styles.</li>
+          <li>use attribute selector.</li>
+        </ul>
+      </li>
+      <li>For DangerMessage Component: 
+        <ul>
+          <li>use external or internal template and styles.</li>
+          <li>use class selector.</li>
+        </ul>
+      </li>
+      <li>Output them next to each other in the AppComponent.</li>
+      <li>Output an appropriate warning, success or danger message in these Components.</li>
+      <li>Style the Components appropriately.</li>
+    </ul>
+    <hr>
+    <p class="point">Feel free to create more components, nest them into each other!</p>
+    <hr>
+    <p class="point"><b>Additional challenge:</b> Add a button in AppComponent that randomly picks which component to display.</p>
+  </div>
+</div>
+<!-- End Practicing Components -->

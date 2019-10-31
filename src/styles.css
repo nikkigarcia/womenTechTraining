@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  color: #3e3f47;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+body strong {
+  font-weight: 800;
+}
+
+body .point {
+  font-size: 1.8em;
+  font-weight: 100;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+body ul.point, 
+ol.point {
+  padding: 0;
+}
+
+body .point ol.list,
+body .point ul.list {
+  list-style-type: disc;
+  margin-left: 50px;
+  font-size: .8em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body .point ol.list li,
+body .point ul.list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+body .point ol.list {
+  list-style-type: decimal;
+}
+
+body.theme h1 {
+  color: #444444;
+  /*#F9DA0C;*/
+  font-size: 2em;
+  font-weight: bold;
+}
+
+body.theme h1.hdr {
+  font-size: 3em;
+  /* margin-bottom: 60px; */
+  margin-top: 60px;
+}
+
+body.theme h2 {
+  color: #7A1501;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+body.theme h3 {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+body.theme .content .row {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+body.theme .content .course-container {
+  background-color: #f8f8f7;
+  margin-bottom: 20px;
+}
+
+body.theme .content .row .week-header {
+  background-color: #dad9d9;
+  padding: 15px;
+}
+
+/* Handy links */
+.links {
+  font-weight: 100;
+}
+.links nav {
+	font-weight: 400;
+}
+.links .link-list {
+  padding: 15px;
+}
+.links .link-list ul {
+  font-size: 1.7em;
+}
+.links .link-list ul li {
+  margin-bottom: 30px;
+}
+.links .link-list ul li a {
+  color: #0073ea;
+  display: block;
+  margin-top: 5px;
+  overflow-wrap: break-word;
+}
+.links .link-list ul li a:hover {
+  color: #7A1501;
+}
+
+/* Others */
+.container.content {
+  padding-top: 165px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img.screenshot {
+  width: 100%;
+}
+
+a {
+  color: #337ab7;
+}
+
+a:hover {
+  color: #7A1501;
+}
+
+b {
+  font-weight: 350;
+}
+
+ul li.link:hover {
+  cursor: pointer;
+}
